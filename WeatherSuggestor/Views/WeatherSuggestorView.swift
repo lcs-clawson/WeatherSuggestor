@@ -53,16 +53,24 @@ struct WeatherSuggestorView: View {
                         .font(.title2)
                         .fontWeight(.semibold)
                         .foregroundColor(Color.yellow)
-                    
                 }
+                .background(
+                RoundedRectangle(cornerRadius: 8)
+                    .foregroundColor(Color.purple))
+                
+                Image(systemName: "sun.max.fill")
                 
                 Button(action: {}) {
                     Text("Activities")
                         .font(.title2)
                         .fontWeight(.semibold)
                         .foregroundColor(Color.purple)
-                    
                 }
+                .background(
+                RoundedRectangle(cornerRadius: 8)
+                    .foregroundColor(Color.yellow))
+                
+                Image(systemName: "figure.walk.circle.fill")
                 
             }
         }
