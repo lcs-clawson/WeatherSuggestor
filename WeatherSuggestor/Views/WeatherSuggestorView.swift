@@ -15,9 +15,18 @@ struct WeatherSuggestorView: View {
                 .font(.largeTitle)
                 .fontWeight(.bold)
             
+                .padding(15)
+            
             Text("Today's Forecast:")
+                .font(.largeTitle)
+                .fontWeight(.semibold)
+            
+            Text("28°C")
+                .font(.title)
+                .fontWeight(.medium)
             
             
+            Spacer()
         }
     }
 }
