@@ -11,8 +11,18 @@ struct SuggestionsView: View {
     var body: some View {
         
         VStack {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            Text("Ideas For Today:")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .background(
+                    RoundedRectangle(cornerRadius: 5)
+                        .foregroundColor(Color.yellow))
             
+            Divider()
+            
+            
+            
+            Spacer()
             
         }
     }
