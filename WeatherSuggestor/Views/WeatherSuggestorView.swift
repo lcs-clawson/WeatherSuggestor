@@ -11,12 +11,13 @@ struct WeatherSuggestorView: View {
     var body: some View {
         
         VStack {
-            Text("Weather Suggestor")
+            
+            Text("The Weather Suggestor")
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .background(
                     RoundedRectangle(cornerRadius: 5)
-                        .foregroundColor(Color.pink))
+                        .foregroundColor(Color.yellow))
             
                 .padding(15)
             
@@ -24,9 +25,20 @@ struct WeatherSuggestorView: View {
                 .font(.largeTitle)
                 .fontWeight(.semibold)
             
+                .padding(10)
+            
             Text("28°C")
-                .font(.title)
-                .fontWeight(.medium)
+                .font(.largeTitle)
+                .fontWeight(.bold)
+            
+            Spacer()
+            
+            Text("Activities for today's weather:")
+                .font(.largeTitle)
+                .fontWeight(.semibold)
+                .background(
+                    RoundedRectangle(cornerRadius: 5)
+                        .foregroundColor(Color.purple))
             
             Spacer()
         }
