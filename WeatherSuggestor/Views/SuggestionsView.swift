@@ -11,6 +11,7 @@ struct SuggestionsView: View {
     var body: some View {
         
         VStack {
+            
             Text("Ideas For Today:")
                 .font(.largeTitle)
                 .fontWeight(.bold)
@@ -19,6 +20,7 @@ struct SuggestionsView: View {
                         .foregroundColor(Color.yellow))
             
             Divider()
+            
             
             
             

@@ -41,6 +41,18 @@ struct WeatherSuggestorView: View {
                         .foregroundColor(Color.purple))
             
             Spacer()
+            
+            Divider()
+            
+            HStack{
+                
+                Button("Weather", action: {} )
+                    .foregroundColor(Color.purple)
+                
+                Button("Activities", action: {} )
+                    .foregroundColor(Color.yellow)
+                
+            }
         }
     }
 }

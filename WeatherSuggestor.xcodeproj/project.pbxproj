@@ -12,6 +12,7 @@
 		366858412A27A6FF00007C59 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 366858402A27A6FF00007C59 /* Preview Assets.xcassets */; };
 		36B2EBCB2A27A95700D94C2F /* WeatherSuggestorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B2EBCA2A27A95700D94C2F /* WeatherSuggestorView.swift */; };
 		36B2EBCD2A291B9F00D94C2F /* SuggestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B2EBCC2A291B9F00D94C2F /* SuggestionsView.swift */; };
+		36B2EBCF2A291D3100D94C2F /* Suggestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B2EBCE2A291D3100D94C2F /* Suggestions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		366858402A27A6FF00007C59 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		36B2EBCA2A27A95700D94C2F /* WeatherSuggestorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherSuggestorView.swift; sourceTree = "<group>"; };
 		36B2EBCC2A291B9F00D94C2F /* SuggestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionsView.swift; sourceTree = "<group>"; };
+		36B2EBCE2A291D3100D94C2F /* Suggestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suggestions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +76,17 @@
 			children = (
 				36B2EBCA2A27A95700D94C2F /* WeatherSuggestorView.swift */,
 				36B2EBCC2A291B9F00D94C2F /* SuggestionsView.swift */,
+				36B2EBD02A291D7200D94C2F /* Model */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		36B2EBD02A291D7200D94C2F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				36B2EBCE2A291D3100D94C2F /* Suggestions.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +162,7 @@
 				36B2EBCD2A291B9F00D94C2F /* SuggestionsView.swift in Sources */,
 				3668583A2A27A6F800007C59 /* WeatherSuggestorApp.swift in Sources */,
 				36B2EBCB2A27A95700D94C2F /* WeatherSuggestorView.swift in Sources */,
+				36B2EBCF2A291D3100D94C2F /* Suggestions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
