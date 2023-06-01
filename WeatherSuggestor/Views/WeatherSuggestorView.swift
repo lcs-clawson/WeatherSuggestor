@@ -33,12 +33,14 @@ struct WeatherSuggestorView: View {
             
             Spacer()
             
-            Text("Activities for today's weather:")
-                .font(.largeTitle)
-                .fontWeight(.semibold)
-                .background(
-                    RoundedRectangle(cornerRadius: 5)
-                        .foregroundColor(Color.purple))
+          
+                
+                Text("Activities for today's weather:")
+                    .font(.largeTitle)
+                    .fontWeight(.semibold)
+                    .background(
+                        RoundedRectangle(cornerRadius: 5)
+                            .foregroundColor(Color.purple))
             
             Spacer()
             
@@ -46,11 +48,21 @@ struct WeatherSuggestorView: View {
             
             HStack{
                 
-                Button("Weather", action: {} )
-                    .foregroundColor(Color.purple)
+                Button(action: {}) {
+                    Text("Weather")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color.yellow)
+                    
+                }
                 
-                Button("Activities", action: {} )
-                    .foregroundColor(Color.yellow)
+                Button(action: {}) {
+                    Text("Activities")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color.purple)
+                    
+                }
                 
             }
         }
