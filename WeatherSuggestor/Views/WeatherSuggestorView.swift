@@ -14,6 +14,9 @@ struct WeatherSuggestorView: View {
             Text("Weather Suggestor")
                 .font(.largeTitle)
                 .fontWeight(.bold)
+                .background(
+                    RoundedRectangle(cornerRadius: 5)
+                        .foregroundColor(Color.pink))
             
                 .padding(15)
             
@@ -24,7 +27,6 @@ struct WeatherSuggestorView: View {
             Text("28°C")
                 .font(.title)
                 .fontWeight(.medium)
-            
             
             Spacer()
         }
