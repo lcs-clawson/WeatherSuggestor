@@ -33,14 +33,12 @@ struct WeatherSuggestorView: View {
             
             Spacer()
             
-          
-                
-                Text("Activities for today's weather:")
-                    .font(.largeTitle)
-                    .fontWeight(.semibold)
-                    .background(
-                        RoundedRectangle(cornerRadius: 5)
-                            .foregroundColor(Color.purple))
+            Text("Activities for today's weather:")
+                .font(.largeTitle)
+                .fontWeight(.semibold)
+                .background(
+                    RoundedRectangle(cornerRadius: 5)
+                        .foregroundColor(Color.purple))
             
             Spacer()
             
@@ -52,11 +50,12 @@ struct WeatherSuggestorView: View {
                     Text("Weather")
                         .font(.title2)
                         .fontWeight(.semibold)
-                        .foregroundColor(Color.yellow)
+                        .foregroundColor(Color.white)
                 }
+                .padding(10)
                 .background(
-                RoundedRectangle(cornerRadius: 8)
-                    .foregroundColor(Color.purple))
+                    RoundedRectangle(cornerRadius: 6)
+                        .foregroundColor(Color.blue))
                 
                 Image(systemName: "sun.max.fill")
                 
@@ -64,11 +63,13 @@ struct WeatherSuggestorView: View {
                     Text("Activities")
                         .font(.title2)
                         .fontWeight(.semibold)
-                        .foregroundColor(Color.purple)
+                        .foregroundColor(Color.white)
+                    
                 }
+                .padding(10)
                 .background(
-                RoundedRectangle(cornerRadius: 8)
-                    .foregroundColor(Color.yellow))
+                    RoundedRectangle(cornerRadius: 6)
+                        .foregroundColor(Color.blue))
                 
                 Image(systemName: "figure.walk.circle.fill")
                 
