@@ -7,12 +7,6 @@
 
 import SwiftUI
 
-struct temperature: Identifiable {
-    let id = UUID()
-    var temp: String
-}
-
-
 
 struct ListView: View {
     var body: some View {

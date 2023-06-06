@@ -29,11 +29,15 @@ struct WeatherSuggestorView: View {
                 .fontWeight(.semibold)
             
                 .padding(10)
-
-
-                    TextField("Enter the temperature", text: $temp)
             
-            
+            HStack {
+                
+                Spacer(minLength: 165)
+                
+                TextField("Enter the temperature", text: $temp)
+                    .font(.largeTitle)
+                    .fontWeight(.semibold)
+            }
             
             Spacer()
             
