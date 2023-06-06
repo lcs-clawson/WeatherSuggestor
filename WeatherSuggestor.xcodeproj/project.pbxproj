@@ -13,6 +13,7 @@
 		36B2EBCB2A27A95700D94C2F /* WeatherSuggestorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B2EBCA2A27A95700D94C2F /* WeatherSuggestorView.swift */; };
 		36B2EBCD2A291B9F00D94C2F /* SuggestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B2EBCC2A291B9F00D94C2F /* SuggestionsView.swift */; };
 		36B2EBD42A2E1A9A00D94C2F /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B2EBD32A2E1A9A00D94C2F /* ListView.swift */; };
+		36B2EBD82A2F907B00D94C2F /* Suggestordb.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 36B2EBD72A2F907B00D94C2F /* Suggestordb.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		36B2EBCA2A27A95700D94C2F /* WeatherSuggestorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherSuggestorView.swift; sourceTree = "<group>"; };
 		36B2EBCC2A291B9F00D94C2F /* SuggestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionsView.swift; sourceTree = "<group>"; };
 		36B2EBD32A2E1A9A00D94C2F /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		36B2EBD72A2F907B00D94C2F /* Suggestordb.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Suggestordb.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		36B2EBD02A291D7200D94C2F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				36B2EBD72A2F907B00D94C2F /* Suggestordb.sqlite */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				366858412A27A6FF00007C59 /* Preview Assets.xcassets in Resources */,
+				36B2EBD82A2F907B00D94C2F /* Suggestordb.sqlite in Resources */,
 				3668583E2A27A6FF00007C59 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
