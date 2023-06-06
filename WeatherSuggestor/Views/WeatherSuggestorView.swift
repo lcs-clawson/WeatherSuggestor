@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct WeatherSuggestorView: View {
+    
+    @State private var temp: String = "20"
+    
     var body: some View {
         
         VStack {
@@ -26,10 +29,11 @@ struct WeatherSuggestorView: View {
                 .fontWeight(.semibold)
             
                 .padding(10)
+
+
+                    TextField("Enter the temperature", text: $temp)
             
-            Text("28°C")
-                .font(.largeTitle)
-                .fontWeight(.bold)
+            
             
             Spacer()
             
