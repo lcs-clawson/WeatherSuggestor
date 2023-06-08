@@ -7,33 +7,31 @@
 
 import SwiftUI
 
-
-struct activities {
+struct Activity {
     var id: Int
     var name: String
-    var highesttemp: Int
-    var lowesttemp: Int
+    var highestTemp: Int
+    var lowestTemp: Int
 }
 
 struct ActivitiesListView: View {
     var body: some View {
-        
         NavigationView {
-            
             List {
-                
-                activities(id: 1, name: "Swim", highesttemp: 35, lowesttemp: 15)
-                
-                activities(id: 2, name: "Go for a walk", highesttemp: 25, lowesttemp: 10)
-                
-                activities(id: 3, name: "Shoot hoops", highesttemp: 22, lowesttemp: 12)
+                ActivityRow(activity: Activity(id: 1, name: "Swim", highestTemp: 35, lowestTemp: 15))
+                ActivityRow(activity: Activity(id: 2, name: "Go for a walk", highestTemp: 25, lowestTemp: 10))
+                ActivityRow(activity: Activity(id: 3, name: "Shoot hoops", highestTemp: 22, lowestTemp: 12))
             }
-            
             .navigationTitle("Activities")
-            
-            
-            
         }
+    }
+}
+
+struct ActivityRow: View {
+    var activity: Activity
+    
+    var body: some View {
+        Text(activity.name)
     }
 }
 
