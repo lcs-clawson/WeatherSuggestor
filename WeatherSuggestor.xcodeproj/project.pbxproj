@@ -18,6 +18,7 @@
 		36B2EBE22A3243A700D94C2F /* Blackbird in Frameworks */ = {isa = PBXBuildFile; productRef = 36B2EBE12A3243A700D94C2F /* Blackbird */; };
 		36B2EBE42A3243DE00D94C2F /* AppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B2EBE32A3243DE00D94C2F /* AppDatabase.swift */; };
 		36B2EBE62A3244F500D94C2F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B2EBE52A3244F500D94C2F /* Activity.swift */; };
+		36B2EBE82A32637000D94C2F /* Suggestion2db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 36B2EBE72A32637000D94C2F /* Suggestion2db.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		36B2EBDE2A3184D000D94C2F /* ActivitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesView.swift; sourceTree = "<group>"; };
 		36B2EBE32A3243DE00D94C2F /* AppDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatabase.swift; sourceTree = "<group>"; };
 		36B2EBE52A3244F500D94C2F /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		36B2EBE72A32637000D94C2F /* Suggestion2db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Suggestion2db.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		36B2EBD02A291D7200D94C2F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				36B2EBE72A32637000D94C2F /* Suggestion2db.sqlite */,
 				36B2EBD72A2F907B00D94C2F /* Suggestordb.sqlite */,
 				36B2EBE52A3244F500D94C2F /* Activity.swift */,
 			);
@@ -175,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36B2EBE82A32637000D94C2F /* Suggestion2db.sqlite in Resources */,
 				366858412A27A6FF00007C59 /* Preview Assets.xcassets in Resources */,
 				36B2EBD82A2F907B00D94C2F /* Suggestordb.sqlite in Resources */,
 				3668583E2A27A6FF00007C59 /* Assets.xcassets in Resources */,
