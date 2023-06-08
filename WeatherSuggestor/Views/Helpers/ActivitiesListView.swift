@@ -7,12 +7,6 @@
 
 import SwiftUI
 
-struct Activity {
-    var id: Int
-    var name: String
-    var highestTemp: Int
-    var lowestTemp: Int
-}
 
 struct ActivitiesListView: View {
     var body: some View {

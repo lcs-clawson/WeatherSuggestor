@@ -7,35 +7,32 @@
 
 import SwiftUI
 
-struct ActivitiesView: View {
-
-//struct activities {
-//    let id: Int
-//    let name: String
-//    let highesttemp: Int
-//    let lowesttemp: Int
-//}
-
+struct Activity {
     let id: Int
-       let name: String
-       let highesttemp: Int
-       let lowesttemp: Int
+    let name: String
+    let highestTemp: Int
+    let lowestTemp: Int
+}
+
+struct ActivitiesView: View {
+    let activity: Activity
     
-        var body: some View {
+    var body: some View {
         HStack {
-                
-        Text(name)
-        .font(.title3)
+            VStack(alignment: .leading, spacing: 4) {
+                Text(activity.name)
+                    .font(.title3)
                     .bold()
+                Text("ID: \(activity.id)")
+                Text("Highest Temperature: \(activity.highestTemp)")
+                Text("Lowest Temperature: \(activity.lowestTemp)")
+            }
         }
-        
-       Text ("Activities structure")
-        
     }
 }
 
 struct ActivitiesView_Previews: PreviewProvider {
     static var previews: some View {
-        ActivitiesView(id: 1, name: "Swimming", highesttemp: 35, lowesttemp: 20)
+        ActivitiesView(activity: Activity(id: 1, name: "Swimming", highestTemp: 35, lowestTemp: 20))
     }
 }

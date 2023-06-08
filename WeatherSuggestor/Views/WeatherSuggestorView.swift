@@ -9,7 +9,7 @@ import SwiftUI
 
 struct WeatherSuggestorView: View {
     
-    @State private var temp: String = "20"
+    @State private var temp: String = "20°"
     
     var body: some View {
         
