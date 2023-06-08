@@ -27,7 +27,13 @@ struct ActivitiesView: View {
                 Text("Highest Temperature: \(activity.highestTemp)")
                 Text("Lowest Temperature: \(activity.lowestTemp)")
             }
+            Spacer()
         }
+        .padding()
+        .background(Color.gray.opacity(0.2))
+        .cornerRadius(8)
+        .padding()
+        
     }
 }
 
