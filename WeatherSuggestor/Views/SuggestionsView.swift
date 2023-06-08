@@ -9,9 +9,7 @@ import SwiftUI
 
 struct SuggestionsView: View {
     
-    let name = "Swim"
-    let highestTemp = 35
-    let lowestTemp = 20
+    
     
     var body: some View {
         

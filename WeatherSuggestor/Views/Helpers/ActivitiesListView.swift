@@ -22,11 +22,10 @@ struct ActivitiesListView: View {
         NavigationView {
             
             List(Suggestions.results) {currentSuggestion in
-                SuggestionsView()
-                //                (name: currentSuggestion.name,
-//                                highestTemp: currentSuggestion.highestTemp,
-//                                lowestTemp: currentSuggestion.lowestTemp)
-                
+                SuggestionsView(name: currentSuggestion.name,
+                                highestTemp: currentSuggestion.highestTemp,
+                                lowestTemp: currentSuggestion.lowestTemp)
+
                 
                 
                 //                ActivityRow(activity: Activity(id: 1, name: "Swim", highestTemp: 35, lowestTemp: 15))
@@ -49,6 +48,7 @@ struct ActivityRow: View {
 struct ActivitiesListView_Previews: PreviewProvider {
     static var previews: some View {
         ActivitiesListView()
-            .environment(\.blackbirdDatabase, AppDatabase.instance )
+            .environment(\.blackbirdDatabase, AppDatabase.instance)
     }
 }
+// Suggestions: Suggestion(id: 1, name: "Swim", highestTemp: 35, lowestTemp: 20

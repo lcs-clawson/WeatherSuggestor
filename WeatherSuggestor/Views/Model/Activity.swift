@@ -14,3 +14,9 @@ struct Suggestion: BlackbirdModel {
     @BlackbirdColumn var highestTemp: Int
     @BlackbirdColumn var lowestTemp: Int
 }
+
+let name = "Swim"
+let highestTemp = 35
+let lowestTemp = 20
+
+let currentSuggestion = Suggestion(id: 1, name: "Swim", highestTemp: 35, lowestTemp: 20)
