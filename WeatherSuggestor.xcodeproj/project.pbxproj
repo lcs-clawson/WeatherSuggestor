@@ -19,6 +19,7 @@
 		36B2EBE42A3243DE00D94C2F /* AppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B2EBE32A3243DE00D94C2F /* AppDatabase.swift */; };
 		36B2EBE62A3244F500D94C2F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B2EBE52A3244F500D94C2F /* Activity.swift */; };
 		36B2EBE82A32637000D94C2F /* Suggestion2db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 36B2EBE72A32637000D94C2F /* Suggestion2db.sqlite */; };
+		36B2EBEA2A33B38100D94C2F /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B2EBE92A33B38100D94C2F /* Activities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		36B2EBE32A3243DE00D94C2F /* AppDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatabase.swift; sourceTree = "<group>"; };
 		36B2EBE52A3244F500D94C2F /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		36B2EBE72A32637000D94C2F /* Suggestion2db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Suggestion2db.sqlite; sourceTree = "<group>"; };
+		36B2EBE92A33B38100D94C2F /* Activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				36B2EBE72A32637000D94C2F /* Suggestion2db.sqlite */,
 				36B2EBD72A2F907B00D94C2F /* Suggestordb.sqlite */,
 				36B2EBE52A3244F500D94C2F /* Activity.swift */,
+				36B2EBE92A33B38100D94C2F /* Activities.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36B2EBEA2A33B38100D94C2F /* Activities.swift in Sources */,
 				36B2EBCD2A291B9F00D94C2F /* SuggestionsView.swift in Sources */,
 				36B2EBDD2A2F93D200D94C2F /* ActivitiesListView.swift in Sources */,
 				3668583A2A27A6F800007C59 /* WeatherSuggestorApp.swift in Sources */,

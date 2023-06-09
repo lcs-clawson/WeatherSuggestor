@@ -9,20 +9,22 @@ import SwiftUI
 import Blackbird
 
 
+
 struct ActivitiesListView: View {
     
     // MARK Stored Properties
     
-    @BlackbirdLiveModels ({ Suggestordb in
-        try await Suggestion.read(from: Suggestordb)
-    }) var Suggestions
+    @BlackbirdLiveModels ({ Suggestion2db in
+        try await Suggestion.read(from: Suggestion2db)
+    }) var suggestions
     
     // MARK Computed Properties
     var body: some View {
         NavigationView {
             
-            List(Suggestions.results) {currentSuggestion in
-                SuggestionsView(name: currentSuggestion.name,
+            List(suggestions.results) {currentSuggestion in
+                // Fix activities view then slap it in here
+                ActivitiesView(name: currentSuggestion.name,
                                 highestTemp: currentSuggestion.highestTemp,
                                 lowestTemp: currentSuggestion.lowestTemp)
 
@@ -38,10 +40,10 @@ struct ActivitiesListView: View {
 }
 
 struct ActivityRow: View {
-    var activity: Activity
+    var suggestion: Suggestion
     
     var body: some View {
-        Text(activity.name)
+        Text(suggestion.name)
     }
 }
 
