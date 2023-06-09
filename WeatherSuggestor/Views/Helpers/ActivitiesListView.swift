@@ -1,3 +1,4 @@
+
 //
 //  ActivitiesListView.swift
 //  WeatherSuggestor
@@ -9,41 +10,34 @@ import SwiftUI
 import Blackbird
 
 
-
-struct ActivitiesListView: View {
+struct ActivityRow: View {
+    var suggestions: Suggestion
     
-    // MARK Stored Properties
-    
-    @BlackbirdLiveModels ({ Suggestion2db in
-        try await Suggestion.read(from: Suggestion2db)
-    }) var suggestions
-    
-    // MARK Computed Properties
     var body: some View {
-        NavigationView {
-            
-            List(suggestions.results) {currentSuggestion in
-                // Fix activities view then slap it in here
-                ActivitiesView(name: currentSuggestion.name,
-                                highestTemp: currentSuggestion.highestTemp,
-                                lowestTemp: currentSuggestion.lowestTemp)
-
-                
-                
-                //                ActivityRow(activity: Activity(id: 1, name: "Swim", highestTemp: 35, lowestTemp: 15))
-                //                ActivityRow(activity: Activity(id: 2, name: "Go for a walk", highestTemp: 25, lowestTemp: 10))
-                //                ActivityRow(activity: Activity(id: 3, name: "Shoot hoops", highestTemp: 22, lowestTemp: 12))
-            }
-            .navigationTitle("Activities")
-        }
+        Text(suggestions.name)
     }
 }
 
-struct ActivityRow: View {
-    var suggestion: Suggestion
+struct ActivitiesListView: View {
     
+    // MARK: Stored Properties
+    
+    @BlackbirdLiveModels({ Suggestion2db in
+        try await Suggestion.read(from: Suggestion2db)
+    }) var suggestions
+    
+    // MARK: Computed Properties
     var body: some View {
-        Text(suggestion.name)
+        NavigationView {
+            
+            List(suggestions.results) { currentSuggestion in
+                ActivityRow(suggestions: Suggestion(id: currentSuggestion.id,
+                                                    name: currentSuggestion.name,
+                                                    highestTemp: currentSuggestion.highestTemp,
+                                                    lowestTemp: currentSuggestion.lowestTemp))
+            }
+            .navigationTitle("Activities")
+        }
     }
 }
 
@@ -54,3 +48,4 @@ struct ActivitiesListView_Previews: PreviewProvider {
     }
 }
 // Suggestions: Suggestion(id: 1, name: "Swim", highestTemp: 35, lowestTemp: 20
+

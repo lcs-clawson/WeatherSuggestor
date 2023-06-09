@@ -12,7 +12,6 @@
 		366858412A27A6FF00007C59 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 366858402A27A6FF00007C59 /* Preview Assets.xcassets */; };
 		36B2EBCB2A27A95700D94C2F /* WeatherSuggestorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B2EBCA2A27A95700D94C2F /* WeatherSuggestorView.swift */; };
 		36B2EBCD2A291B9F00D94C2F /* SuggestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B2EBCC2A291B9F00D94C2F /* SuggestionsView.swift */; };
-		36B2EBD82A2F907B00D94C2F /* Suggestordb.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 36B2EBD72A2F907B00D94C2F /* Suggestordb.sqlite */; };
 		36B2EBDD2A2F93D200D94C2F /* ActivitiesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B2EBDC2A2F93D200D94C2F /* ActivitiesListView.swift */; };
 		36B2EBDF2A3184D000D94C2F /* ActivitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B2EBDE2A3184D000D94C2F /* ActivitiesView.swift */; };
 		36B2EBE22A3243A700D94C2F /* Blackbird in Frameworks */ = {isa = PBXBuildFile; productRef = 36B2EBE12A3243A700D94C2F /* Blackbird */; };
@@ -29,7 +28,6 @@
 		366858402A27A6FF00007C59 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		36B2EBCA2A27A95700D94C2F /* WeatherSuggestorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherSuggestorView.swift; sourceTree = "<group>"; };
 		36B2EBCC2A291B9F00D94C2F /* SuggestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionsView.swift; sourceTree = "<group>"; };
-		36B2EBD72A2F907B00D94C2F /* Suggestordb.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Suggestordb.sqlite; sourceTree = "<group>"; };
 		36B2EBDC2A2F93D200D94C2F /* ActivitiesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesListView.swift; sourceTree = "<group>"; };
 		36B2EBDE2A3184D000D94C2F /* ActivitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesView.swift; sourceTree = "<group>"; };
 		36B2EBE32A3243DE00D94C2F /* AppDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatabase.swift; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				36B2EBE72A32637000D94C2F /* Suggestion2db.sqlite */,
-				36B2EBD72A2F907B00D94C2F /* Suggestordb.sqlite */,
 				36B2EBE52A3244F500D94C2F /* Activity.swift */,
 				36B2EBE92A33B38100D94C2F /* Activities.swift */,
 			);
@@ -183,7 +180,6 @@
 			files = (
 				36B2EBE82A32637000D94C2F /* Suggestion2db.sqlite in Resources */,
 				366858412A27A6FF00007C59 /* Preview Assets.xcassets in Resources */,
-				36B2EBD82A2F907B00D94C2F /* Suggestordb.sqlite in Resources */,
 				3668583E2A27A6FF00007C59 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
